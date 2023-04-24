@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input name="place" id="place" oninput="update_places()">
+
+<select name="city" id="select-city">
+</select>
+
+<button onclick="show_weather()">Смотреть погоду</button>
+
+<div id="info">
+
+</div>
+
+<script src={% static "js/script.js" %}></script>
+</body>
+</html>
